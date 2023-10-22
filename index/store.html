@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Motor trading</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <script src="assets/js/main.js"></script>
+
+</head>
+<body>
+    <header>
+      <div class="logo-social-container">
+        <div class="social-icons">
+            <a href="#"><img src="admin_uploaded_photos/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="admin_uploaded_photos/instagram-icon.png" alt="Instagram"></a>
+            <a href="#"><img src="admin_uploaded_photos/youtube-icon.png" alt="Youtube"></a>
+            <a href="#"><img src="admin_uploaded_photos/email-icon.png" alt="Mail"></a>
+            <!-- Add more social media icons as needed -->
+        </div>
+
+        <div class="logo">
+            <a href="index.html"> <img id="logo" src="admin_uploaded_photos/site_logo.png" alt="Your Logo"> </a>
+        </div>
+    </div>
+    </header>
+  
+
+    <nav role='navigation'>
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="#"><li>About</li></a>
+          <a href="#"><li>Info</li></a>
+          <a href="store.html"><li>Showroom</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar" id="navbar">
+      <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Reviews</a></li>
+          <li><a href="store.html">Showroom</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+      </ul>
+  </nav>
+
+    
+    <main>
+        <div id="car-data">
+            <!-- Car data will be dynamically populated here -->
+            
+        </div>
+    </main>
+    
+    <div class="footer-section news">
+      <!-- Add newsletter form or link here -->
+        <h4>Stock Update</h4>
+      <p>Recieve stock updates every time a new car arrives.</p>
+      <form action="#">
+        <input type="https://www.google.com/" placeholder="Email" />
+        <input type="submit" value="Notify me" />
+      </form>
+    </div>
+
+    
+    <script>
+    fetch('/api/cars') // API endpoint on your server
+        .then(res =>{
+            return res.json();
+    })
+    .then(data => {
+        data.forEach(cars => {
+            const row = document.createElement('div');
+            const markup =
+             `
+             <div class="carSpec">
+             <h2>${cars.name}</h2>
+             <img src="${cars.image}" alt="${cars.name}" width="200">
+             <div class="carSpecdetails">
+             <p>${cars.details}</p>
+             <p>${cars.description}</p>
+             <div id=price>
+             <p>Price: $${cars.price}</p>
+             </div>
+             </div>
+             </div>` ;
+
+            document.getElementById('car-data').insertAdjacentHTML("beforeend", markup);
+        });
+    })
+    .catch(error => console.log(error));
+    </script>
+</body>
+
+<footer>
+  <!-- Footer content goes here -->
+  <div class="footer-section hours">
+    <h4>Opening Hours</h4>
+    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+    <p>Saturday: 10:00 AM - 4:00 PM</p>
+    <p>Sunday: Closed</p>
+</div>
+<div class="footer-section ContactUs">
+    <h4>Contact Us</h4>
+    <div class="footer-logo">
+      <img id="logo" src="admin_uploaded_photos/site_logo.png" alt="Your Logo">
+    </div>
+    <p>Email: info@example.com</p>
+    <p>Phone: +1 (123) 456-7890</p>
+    <p>Address: 123 Main Street, City</p>
+</div>
+</footer>
+</html>

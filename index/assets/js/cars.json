@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Lamborghini",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 1",
+        "description": "Description for Car 1",
+        "price": 25000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    },
+    {
+        "name": "Porsche",
+        "image": "admin_uploaded_photos/used_car1.jpeg",
+        "details": "Details for Car 2",
+        "description": "Description for Car 2",
+        "price": 30000
+    }
+]
